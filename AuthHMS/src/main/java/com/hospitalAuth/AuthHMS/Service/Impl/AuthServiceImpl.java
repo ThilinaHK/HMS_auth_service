@@ -8,15 +8,12 @@ import com.hospitalAuth.AuthHMS.Entity.User;
 import com.hospitalAuth.AuthHMS.Repository.RoleRepository;
 import com.hospitalAuth.AuthHMS.Repository.UserRepository;
 import com.hospitalAuth.AuthHMS.Service.AuthService;
-import com.hospitalAuth.AuthHMS.Utill.JwtUtil;
+import com.hospitalAuth.AuthHMS.Config.auth.JwtUtil;
 import jakarta.transaction.Transactional;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Set;
 
 @Service
 @Transactional

@@ -4,20 +4,14 @@ import com.hospitalAuth.AuthHMS.Dto.AuthResponse;
 import com.hospitalAuth.AuthHMS.Dto.LoginRequest;
 import com.hospitalAuth.AuthHMS.Dto.RegisterRequest;
 import com.hospitalAuth.AuthHMS.Service.AuthService;
-import com.hospitalAuth.AuthHMS.Utill.JwtUtil;
+import com.hospitalAuth.AuthHMS.Config.auth.JwtUtil;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-
-import java.util.Collections;
-import java.util.Map;
 
 @RestController
 @RequestMapping("api/v1/auth/")
